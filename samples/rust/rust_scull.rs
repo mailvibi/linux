@@ -11,6 +11,7 @@ struct Scull;
 
 impl kernel::Module for Scull {
     fn init(_name: &'static CStr, _module: &'static ThisModule) -> Result<Self> {
+        pr_info!("Hello world\n");
         Ok(Scull)
     }
 }
